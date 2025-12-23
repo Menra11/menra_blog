@@ -1,24 +1,21 @@
-<script setup>
+<script setup lang="ts">
+const { data } = await useAsyncData("navigation", () => {
+  return queryCollectionNavigation("content");
+});
 </script>
 
-
 <template>
-  <div>
-    <FullScreenImage class="w-full h-[calc(100vh-64px)] relative"/>
-    <section class="container mx-auto px-4 py-12">
+  <div class="size-full">
+    <div class="h-[calc(50vh-64px)] flex items-center justify-center p-4">
+      <About/>
+    </div>
+    <Contaner>
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl font-semibold mb-6">最新文章</h2>
-        <div class="space-y-8">
-          <article class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-medium mb-2">第一篇博客文章</h3>
-            <p class="text-gray-600">这里是文章的摘要部分...</p>
-            <NuxtLink to="/blog/v1" class="text-blue-500 hover:underline mt-2 inline-block">阅读更多</NuxtLink>
-          </article>
-        </div>
+        <Item :data="data" />
       </div>
-    </section>
+    </Contaner>
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

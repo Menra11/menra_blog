@@ -1,9 +1,15 @@
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="size-full flex flex-col overflow-hidden bg-slate-400">
     <Header />
-    
-    <main class="grow">
+    <main class="w-full h-[calc(100vh-64px)] grow overflow-auto hide-scrollbar">
       <NuxtPage />
     </main>
   </div>
 </template>
+
+<style scoped>
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; 
+}
+
+</style>

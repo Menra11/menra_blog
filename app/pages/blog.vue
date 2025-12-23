@@ -1,13 +1,13 @@
-<template>
-  <div>
-    blog
-  </div>
-</template>
-
-<script lang="ts" setup>
-
+<script setup lang="ts">
+const { data } = await useAsyncData("navigation", () => {
+  return queryCollectionNavigation("content");
+});
 </script>
 
-<style>
-
-</style>
+<template>
+  <Contaner>
+    <div class="max-w-3xl mx-auto">
+      <Item :data="data" />
+    </div>
+  </Contaner>
+</template>
