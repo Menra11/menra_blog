@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <FullScreenImage  class="w-full h-screen relative"/>
+    <FullScreenImage class="w-full h-[calc(100vh-64px)] relative"/>
     <section class="container mx-auto px-4 py-12">
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl font-semibold mb-6">最新文章</h2>

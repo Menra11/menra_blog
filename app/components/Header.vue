@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-blue-50 shadow-lg p-4">
+  <header class="bg-blue-50 shadow-lg p-4 h-16">
     <div class="flex justify-between items-center">
       <!-- 博客名称放在左边 -->
       <div class="text-xl font-bold">
