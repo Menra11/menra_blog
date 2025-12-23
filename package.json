@@ -1,0 +1,19 @@
+{
+  "name": "menra_blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --open",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.9.0",
+    "@nuxtjs/mdc": "^0.19.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "better-sqlite3": "^12.5.0",
+    "nuxt": "^4.2.2",
+    "tailwindcss": "^4.1.18"
+  }
+}
