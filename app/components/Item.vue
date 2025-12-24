@@ -2,7 +2,7 @@
   <div class="space-y-8 hover:" v-if="data">
     <article
       class="bg-slate-200 p-6 rounded-lg shadow-md"
-      v-for="item in data.isReverse ? data.slice().reverse() : data"
+      v-for="item in data.slice().reverse().slice(0,displayNumber)"
       :key="item.path"
     >
       <NuxtLink :to="item.path"
@@ -17,9 +17,9 @@
 </template>
 
 <script lang="ts" setup>
-const { data,isReverse } = defineProps<{
+const { data,displayNumber } = defineProps<{
   data: any;
-  isReverse:boolean;
+  displayNumber:number;
 }>();
 </script>
 

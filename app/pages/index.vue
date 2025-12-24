@@ -13,7 +13,7 @@ const { data } = await useAsyncData("navigation", () => {
     <Contaner>
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl font-semibold mb-6">最新文章</h2>
-        <Item :data="data" :isReverse="true" />
+        <Item :data="data" :displayNumber="3" />
       </div>
     </Contaner>
   </div>
