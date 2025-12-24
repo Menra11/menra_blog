@@ -7,7 +7,7 @@ const { data } = await useAsyncData("navigation", () => {
 <template>
   <Contaner>
     <div class="max-w-3xl mx-auto">
-      <Item :data="data" />
+      <Item :data="data" :isReverse="false" />
     </div>
   </Contaner>
 </template>
