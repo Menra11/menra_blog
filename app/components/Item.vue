@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-8 hover:" v-if="data">
     <article
-      class="bg-slate-300 p-6 rounded-lg shadow-md"
+      class="bg-slate-200 p-6 rounded-lg shadow-md"
       v-for="item in data.slice().reverse()"
       :key="item.path"
     >
