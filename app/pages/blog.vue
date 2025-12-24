@@ -2,12 +2,19 @@
 const { data } = await useAsyncData("navigation", () => {
   return queryCollectionNavigation("content");
 });
+if (!data.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Page not found",
+    fatal: true,
+  });
+}
 </script>
 
 <template>
   <Contaner>
     <div class="max-w-3xl mx-auto">
-      <Item :data="data" :displayNumber="data!.length" />
+      <ItemCard :data="data" :display-number="data?.length" />
     </div>
   </Contaner>
 </template>

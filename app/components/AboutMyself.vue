@@ -5,7 +5,7 @@
           src="~/assets/images/02.jpg"
           alt="头像"
           class="w-48 h-48 rounded-full"
-        />
+        >
       </div>
       <div
         class="flex flex-col items-start justify-start border-l ml-10 pl-5 h-48"

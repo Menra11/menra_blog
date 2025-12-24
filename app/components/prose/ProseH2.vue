@@ -17,8 +17,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, useRuntimeConfig, ref, onUnmounted } from '#imports'
-
 const props = defineProps<{ id?: string }>()
 
 const { headings } = useRuntimeConfig().public.mdc

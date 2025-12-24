@@ -6,15 +6,23 @@
     "build": "nuxt build",
     "dev": "nuxt dev --open",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/content": "^3.9.0",
+    "@nuxt/eslint": "1.12.1",
     "@nuxtjs/mdc": "^0.19.1",
     "@tailwindcss/vite": "^4.1.18",
+    "@types/parse-path": "7.1.0",
     "better-sqlite3": "^12.5.0",
+    "eslint": "^9.39.2",
     "nuxt": "^4.2.2",
     "tailwindcss": "^4.1.18",
     "ufo": "^1.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }

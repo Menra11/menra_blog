@@ -1,8 +1,3 @@
 <template>
-  <h1 v-if="false">
-  </h1>
+  <h1 v-if="false"/>
 </template>
-
-<script setup lang="ts">
-const props = defineProps<{ id?: string }>()
-</script>

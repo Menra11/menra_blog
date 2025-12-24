@@ -1,6 +1,6 @@
 <template>
   <div class="size-full flex flex-col overflow-hidden bg-slate-100">
-    <Header />
+    <HeaderNav />
     <main class="w-full h-[calc(100vh-64px)] grow overflow-auto hide-scrollbar">
       <NuxtPage />
     </main>

@@ -1,9 +1,9 @@
 <template>
-  <div class="space-y-8 hover:" v-if="data">
+  <div v-if="data" class="space-y-8 hover:">
     <article
-      class="bg-slate-200 p-6 rounded-lg shadow-md"
       v-for="item in data.slice().reverse().slice(0,displayNumber)"
       :key="item.path"
+      class="bg-slate-200 p-6 rounded-lg shadow-md"
     >
       <NuxtLink :to="item.path"
         ><h3 class="text-xl font-medium mb-2">{{ item.title }}</h3>
@@ -17,8 +17,9 @@
 </template>
 
 <script lang="ts" setup>
+import type { ContentNavigationItem } from '@nuxt/content'
 const { data,displayNumber } = defineProps<{
-  data: any;
+  data: ContentNavigationItem[];
   displayNumber:number;
 }>();
 </script>

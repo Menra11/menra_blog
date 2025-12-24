@@ -8,12 +8,12 @@ const { data } = await useAsyncData("navigation", () => {
 <template>
   <div class="size-full">
     <div class="h-[calc(50vh-64px)] flex items-center justify-center p-4">
-      <About/>
+      <AboutMyself />
     </div>
     <Contaner>
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl font-semibold mb-6">最新文章</h2>
-        <Item :data="data" :displayNumber="3" />
+        <ItemCard :data="data" :display-number="3" />
       </div>
     </Contaner>
   </div>

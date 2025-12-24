@@ -64,6 +64,6 @@ Thank you for reading this markdown test file!
 
 ---
 ## 组件块
-::Alert
+::AlertCard
 123
 ::
