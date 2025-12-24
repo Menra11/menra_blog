@@ -11,5 +11,4 @@
 .hide-scrollbar::-webkit-scrollbar {
     display: none; 
 }
-
 </style>

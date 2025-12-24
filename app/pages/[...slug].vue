@@ -16,8 +16,6 @@ if (!page.value) {
 
 <template>
   <Contaner>
-    <div class="w-3xl mx-auto">
-      <ContentRenderer v-if="page" :value="page" class="flex flex-col gap-4"/>
-    </div>
+      <ContentRenderer v-if="page" :value="page" class="flex flex-col gap-4 max-w-3xl mx-auto"/>
   </Contaner>
 </template>
