@@ -7,7 +7,10 @@
     >
       <NuxtLink :to="item.path"
         ><h3 class="text-xl font-medium mb-2">{{ item.title }}</h3>
-       <p>这里是文章的摘要部分...</p>
+       <div class="flex justify-between items-center">
+        <p>{{item.description}}</p>
+       <span>{{ item.date }}</span>
+       </div>
       </NuxtLink>
     </article>
   </div>

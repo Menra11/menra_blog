@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { data } = await useAsyncData("navigation", () => {
-  return queryCollectionNavigation("content");
+  return queryCollectionNavigation("content",['description','date'])
+    .order('date', 'ASC');
 });
 </script>
 
