@@ -1,20 +1,23 @@
 <script setup lang="ts">
-const { data } = await useAsyncData("navigation", () => {
-  return queryCollectionNavigation("content");
-});
+const { data } = await useAsyncData('navigation', () => {
+  return queryCollectionNavigation('content')
+})
 if (!data.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: "Page not found",
+    statusMessage: 'Page not found',
     fatal: true,
-  });
+  })
 }
 </script>
 
 <template>
-  <Contaner>
+  <BlogContaner>
     <div class="max-w-3xl mx-auto">
-      <ItemCard :data="data" :display-number="data?.length" />
+      <ItemCard
+        :data="data!"
+        :display-number="data!.length"
+      />
     </div>
-  </Contaner>
+  </BlogContaner>
 </template>

@@ -1,5 +1,8 @@
 <template>
-  <h4 :id="props.id" class="group relative text-xl font-bold hover:cursor-pointer">
+  <h4
+    :id="props.id"
+    class="group relative text-xl font-bold hover:cursor-pointer"
+  >
     <a
       v-if="props.id && generate"
       :href="`#${props.id}`"

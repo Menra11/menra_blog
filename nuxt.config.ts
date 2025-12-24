@@ -1,18 +1,18 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/eslint'],
-  ssr: true,
+  devtools: { enabled: true },
+  // ssr: true,
   css: ['~/assets/css/main.css'],
-  vite:{
+  compatibilityDate: '2024-04-03',
+  vite: {
     plugins: [tailwindcss()],
   },
-  eslint:{
+  eslint: {
     config: {
-      stylistic: true 
-    }
+      stylistic: true,
+    },
   },
-  devtools: { enabled: true },
-  compatibilityDate: '2024-04-03',
 })

@@ -1,6 +1,6 @@
 <template>
   <code class="bg-slate-200 rounded-md inline-block px-2 py-1 text-xs text-slate-600">
-      <slot />
+    <slot />
   </code>
 </template>
 

@@ -1,14 +1,14 @@
-import { defineContentConfig, defineCollection } from "@nuxt/content";
-import { z } from "zod";
+import { defineContentConfig, defineCollection } from '@nuxt/content'
+import { z } from 'zod'
 
 export default defineContentConfig({
   collections: {
     content: defineCollection({
-      type: "page",
-      source: "**",
+      type: 'page',
+      source: '**',
       schema: z.object({
         date: z.string(),
       }),
     }),
   },
-});
+})

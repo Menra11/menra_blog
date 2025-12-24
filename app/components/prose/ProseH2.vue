@@ -1,5 +1,8 @@
 <template>
-  <h2 :id="props.id" class="group relative text-xl font-bold hover:cursor-pointer">
+  <h2
+    :id="props.id"
+    class="group relative text-xl font-bold hover:cursor-pointer"
+  >
     <a
       v-if="props.id && generate"
       :href="`#${props.id}`"
@@ -21,5 +24,4 @@ const props = defineProps<{ id?: string }>()
 
 const { headings } = useRuntimeConfig().public.mdc
 const generate = computed(() => props.id && ((typeof headings?.anchorLinks === 'boolean' && headings?.anchorLinks === true) || (typeof headings?.anchorLinks === 'object' && headings?.anchorLinks?.h2)))
-
 </script>

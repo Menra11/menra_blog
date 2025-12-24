@@ -9,6 +9,6 @@
 
 <style scoped>
 .hide-scrollbar::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 </style>

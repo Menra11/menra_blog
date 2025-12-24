@@ -1,6 +1,6 @@
 <template>
   <div class="py-12 px-8 mx-8">
-    <slot/>
+    <slot />
   </div>
 </template>
 
