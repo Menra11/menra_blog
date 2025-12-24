@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "postinstall": "nuxt prepare",
     "build": "nuxt build",
     "dev": "nuxt dev --open",
     "generate": "nuxt generate",
@@ -11,18 +12,30 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/content": "^3.9.0",
+    "@libsql/client": "^0.15.15",
+    "@nuxt/content": "^3.10.0",
     "@nuxt/eslint": "1.12.1",
-    "@nuxtjs/mdc": "^0.19.1",
-    "@tailwindcss/vite": "^4.1.18",
-    "@types/parse-path": "7.1.0",
-    "better-sqlite3": "^12.5.0",
-    "eslint": "^9.39.2",
+    "@nuxthub/core": "0.10.4",
+    "@nuxtjs/mdc": "^0.19.2",
+    "drizzle-kit": "^0.31.8",
+    "drizzle-orm": "^0.45.1",
     "nuxt": "^4.2.2",
     "tailwindcss": "^4.1.18",
     "ufo": "^1.6.1"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/parse-path": "7.1.0",
+    "better-sqlite3": "^12.5.0",
+    "eslint": "^9.39.2",
     "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "better-sqlite3",
+      "esbuild",
+      "unrs-resolver"
+    ]
   }
 }
