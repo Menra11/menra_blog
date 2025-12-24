@@ -4,7 +4,7 @@
       v-if="props.id && generate"
       :href="`#${props.id}`"
       class="absolute -left-8 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 ease-in-out flex items-center justify-end w-6 h-6 rounded-md text-slate-600 transition-all duration-200"
-    >###</a>
+    >##</a>
     <a
       v-if="props.id && generate"
       :href="`#${props.id}`"
