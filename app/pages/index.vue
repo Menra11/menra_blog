@@ -7,7 +7,7 @@ const { data } = await useAsyncData('navigation', () => {
 
 <template>
   <div class="size-full">
-    <div class="h-[calc(50vh-64px)] flex items-center justify-center p-4">
+    <div class="h-[calc(50vh-64px)] max-w-3xl flex items-center justify-center p-4 mx-auto">
       <AboutMyself />
     </div>
     <BlogContaner>
