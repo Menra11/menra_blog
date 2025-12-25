@@ -17,16 +17,26 @@ if (!page.value) {
 <template>
   <div>
     <header
-      class="mt-10 px-8 max-w-4xl mx-auto flex flex-col justify-start items-start"
+      class="mt-10 max-w-3xl mx-auto flex flex-col justify-start items-start"
     >
-      <h1 class="text-xl font-bold">
-        {{ page?.title }}
+      <h1 class="text-xl font-medium mb-2">
+        {{ page!.title }}
       </h1>
-      <div>
-        <span class="text-xs pr-5">{{ page?.date }}</span>
-        <span class="text-xs">{{ page?.description }}</span>
+      <div class="w-full flex justify-start items-center text-sm text-slate-500 gap-4">
+        <span class="flex justify-center items-center gap-1">
+          <UIcon
+            name="ic:twotone-bookmark-border"
+            class="size-4"
+          />{{ page!.description }}
+        </span>
+        <span class="flex justify-center items-center gap-1">
+          <UIcon
+            name="ic:baseline-calendar-month"
+            class="size-4"
+          />{{ page!.date }}
+        </span>
       </div>
-      <div class="h-1 w-full bg-slate-700 my-1" />
+      <div class="h-1 w-full bg-slate-700 mt-2 mb-1" />
       <div class="h-0.5 w-full bg-slate-700" />
     </header>
     <BlogContaner>

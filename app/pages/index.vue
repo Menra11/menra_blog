@@ -12,9 +12,6 @@ const { data } = await useAsyncData('navigation', () => {
     </div>
     <BlogContaner>
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-semibold mb-6">
-          最新文章
-        </h2>
         <ItemCard
           :data="data!"
           :display-number="3"
