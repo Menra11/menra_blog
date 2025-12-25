@@ -14,23 +14,23 @@
           <UIcon
             name="ic:outline-account-circle"
             class="size-6"
-          /><span class="mr-5">Menra</span>
+          /><span class="font-medium">Menra</span>
           <UIcon
-            name="ic:outline-cake"
+            name="ic:baseline-favorite-border"
             class="size-6"
-          /><span>2004-07-14</span>
+          /><span>Client enthusiast</span>
         </h1>
 
         <!-- 2 - 喜好和位置 -->
         <span class="ml-6 h-8 flex items-center justify-start gap-2 animate-slide-in delay-1">
           <UIcon
-            name="ic:baseline-favorite-border"
+            name="ic:outline-cake"
             class="size-6"
-          /><span>Client enthusiast</span>
+          /><span>2004-07-14</span>
           <UIcon
             name="ic:outline-place"
             class="size-6"
-          /><span>CN</span>/<span class="text-sm">GuanZhou</span>
+          /><span>CN / GuanZhou</span>
         </span>
 
         <!-- 3 - 工具 -->
@@ -38,7 +38,7 @@
           <UIcon
             name="ic:outline-build"
             class="size-6"
-          /><span>tools:</span>
+          /><span class="font-medium">tools:</span>
           <ToolCard
             name="vscode-icons:file-type-vscode"
             text="VSCode"
@@ -58,7 +58,7 @@
           <UIcon
             name="ic:round-code"
             class="size-6"
-          /><span>languages:</span>
+          /><span class="font-medium">languages:</span>
           <ToolCard
             name="vscode-icons:file-type-tsconfig"
             text="TypeScript"
@@ -74,7 +74,7 @@
           <UIcon
             name="ic:round-apps"
             class="size-6"
-          /><span>frame:</span>
+          /><span class="font-medium">frame:</span>
           <ToolCard
             name="vscode-icons:file-type-nuxt"
             text="Nuxt 4"

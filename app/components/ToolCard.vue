@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center px-2 bg-white rounded-sm border border-slate-500 h-8 text-sm">
+  <div class="flex justify-between items-center px-2 bg-white rounded-sm border border-slate-500 h-8 text-sm gap-1">
     <UIcon
       :name="name"
       class="size-4"
