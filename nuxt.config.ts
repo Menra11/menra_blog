@@ -2,7 +2,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxthub/core'],
+  modules: ['@nuxt/content', '@nuxt/eslint', '@nuxthub/core', '@nuxt/ui'],
   devtools: { enabled: true },
   // ssr: true,
   css: ['~/assets/css/main.css'],

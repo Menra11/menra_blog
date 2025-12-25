@@ -17,6 +17,7 @@
     "@neondatabase/serverless": "^1.0.2",
     "@nuxt/content": "^3.10.0",
     "@nuxt/eslint": "1.12.1",
+    "@nuxt/ui": "^4.3.0",
     "@nuxthub/core": "0.10.4",
     "@nuxtjs/mdc": "^0.19.2",
     "drizzle-kit": "^0.31.8",
@@ -29,6 +30,8 @@
     "zod": "^4.2.1"
   },
   "devDependencies": {
+    "@iconify-json/ic": "^1.2.4",
+    "@iconify-json/vscode-icons": "^1.2.37",
     "@tailwindcss/vite": "^4.1.18",
     "@types/parse-path": "7.1.0",
     "better-sqlite3": "^12.5.0",
