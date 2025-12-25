@@ -12,6 +12,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@electric-sql/pglite": "^0.3.14",
     "@libsql/client": "^0.15.15",
     "@neondatabase/serverless": "^1.0.2",
     "@nuxt/content": "^3.10.0",
