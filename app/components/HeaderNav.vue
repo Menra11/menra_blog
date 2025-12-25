@@ -9,12 +9,6 @@
         <ul class="flex space-x-6">
           <li>
             <NuxtLink
-              to="/"
-              class="hover:text-blue-700"
-            >Menra's blog</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink
               to="/blog"
               class="hover:text-blue-700"
             >文章</NuxtLink>
