@@ -3,8 +3,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/eslint', '@nuxthub/core', '@nuxt/ui'],
+  ssr: true,
   devtools: { enabled: true },
-  // ssr: true,
   css: ['~/assets/css/main.css'],
   content: {
     database: {
