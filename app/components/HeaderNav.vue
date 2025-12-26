@@ -1,5 +1,5 @@
 <template>
-  <header class="p-4 h-16">
+  <header class="p-4 h-16 w-full bg-slate-200 border-b rounded-lg border-slate-300">
     <div class="flex justify-between items-center">
       <div class="text-xl font-bold">
         <NuxtLink to="/">Menra's blog</NuxtLink>
