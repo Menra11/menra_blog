@@ -1,13 +1,13 @@
 <template>
   <div class="size-full flex items-center justify-center">
-    <div class="flex flex-col md:flex-row items-start justify-start max-w-4xl">
+    <div class="flex flex-col md:flex-row items-start justify-start max-w-4xl ">
       <!-- 容器1：头像和小屏幕前两排内容 -->
-      <div class="flex md:flex-row items-center md:items-center order-1">
+      <div class="flex md:flex-row items-center md:items-center order-1 ">
         <!-- 头像 -->
         <img
           src="~/assets/images/02.jpg"
           alt="头像"
-          class="w-20 h-20 md:w-48 md:h-48 rounded-full border-2 border-slate-500 shrink-0"
+          class="w-16 h-16 md:w-48 md:h-48 md:rounded-full border-2 border-slate-500 shrink-0 rounded-lg transition-all duration-300 ease-in-out"
         >
 
         <!-- 小屏幕前两排内容 -->

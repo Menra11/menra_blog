@@ -15,9 +15,9 @@ if (!page.value) {
 </script>
 
 <template>
-  <div>
+  <BlogContaner>
     <header
-      class="mt-10 max-w-3xl mx-auto flex flex-col justify-start items-start"
+      class="mb-10 max-w-3xl mx-auto flex flex-col justify-start items-start"
     >
       <h1 class="text-xl font-medium mb-2">
         {{ page!.title }}
@@ -39,12 +39,11 @@ if (!page.value) {
       <div class="h-1 w-full bg-slate-700 mt-2 mb-1" />
       <div class="h-0.5 w-full bg-slate-700" />
     </header>
-    <BlogContaner>
-      <ContentRenderer
-        v-if="page"
-        :value="page"
-        class="flex flex-col gap-4 max-w-3xl mx-auto"
-      />
-    </BlogContaner>
-  </div>
+
+    <ContentRenderer
+      v-if="page"
+      :value="page"
+      class="flex flex-col gap-4 max-w-3xl mx-auto"
+    />
+  </BlogContaner>
 </template>
