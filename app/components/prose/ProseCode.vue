@@ -1,5 +1,5 @@
 <template>
-  <code class="bg-slate-200 rounded-md inline-block px-2 py-1 text-xs text-slate-600">
+  <code class="bg-white rounded-md inline-block px-2 py-1 text-xs text-slate-600 hover:shadow-sm">
     <slot />
   </code>
 </template>
